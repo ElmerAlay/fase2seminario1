@@ -168,4 +168,21 @@ RancherOS incluye la cantidad mínima de software necesaria para ejecutar Docker
         http://TU-IP-PUBLICA:8080
 4) Procedemos a crear un acceso
 
-        
+![1](1.png)
+
+5) Ahora Creamos un host
+6) Seleccionaremos la opción de amazon
+
+![2](2.png)
+
+7) Ingresamos los datos de nuestro access key
+8) Continuamos y nos mandará a la siguiente ventana
+![3](3.png)
+
+9) En ella colocamos lo que nos solicita
+![4](4.png)
+
+10) Damos click en crear 
+11) Empezará a cargar
+
+![5](5.png)
