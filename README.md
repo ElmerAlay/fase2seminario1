@@ -155,3 +155,17 @@ Terraform es un software de infraestructura como código desarrollado por HashiC
 RancherOS es un pequeño sistema operativo que está específicamente orientado a trabajar con el popular Docker, de hecho, el sistema operativo ocupa tan solo 20MB debido a que tiene únicamente lo básico para ejecutar Docker e incorporarle una gran cantidad de funcionalidades. Todo en RancherOS es gestionado por Docker, tanto los servicios del sistema, como udev como rsyslog. Por tanto, RancherOS es simplemente la base para posteriormente ejecutar cualquier software a través de Docker, todo en RancherOS se ejecuta en estos contenedores. RancherOS es la forma más pequeña y fácil de ejecutar Docker en producción. Cada proceso en RancherOS es un contenedor administrado por Docker. Esto incluye servicios del sistema como udevy syslog. Como solo incluye los servicios necesarios para ejecutar Docker, RancherOS es significativamente más pequeño que la mayoría de los sistemas operativos tradicionales. Al eliminar bibliotecas y servicios innecesarios, también se reducen los requisitos de parches de seguridad y otros tipos de mantenimiento. Esto es posible porque, con Docker, los usuarios normalmente empaquetan todas las bibliotecas necesarias en sus contenedores. Otra forma en la que RancherOS está diseñado específicamente para ejecutar Docker es que siempre ejecuta la última versión de Docker. Esto permite a los usuarios aprovechar las últimas capacidades y correcciones de errores de Docker.
 
 RancherOS incluye la cantidad mínima de software necesaria para ejecutar Docker. Todo lo demás se puede extraer dinámicamente a través de Docker. RancherOS simplifica la ejecución de contenedores a escala en desarrollo, prueba y producción.
+
+## Instalar Rancher
+1)  Comenzamos instalando docker en nuestra máquina con ubuntu
+                    
+        sudo apt install docker.io 
+2) Ahora procedemos a instalar rancher con el siguiente comando
+      
+        sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
+3) Para acceder sólo tenemos que ir a nuestro navegador y colocar
+
+        http://TU-IP-PUBLICA:8080
+4) Procedemos a crear un acceso
+
+        
